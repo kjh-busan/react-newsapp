@@ -5,7 +5,7 @@ export default function NewsList({news}) {
 
   const render =   news.map(item => {
     const domain = item.domain || 'unknown'
-    const comments = item.comments_count && '%🖌' + item.comments_count
+    const comments = item.comments_count && '🖌' + item.comments_count
 
         return (
           <div className='newsTitle' key={item.id}>
